@@ -1,0 +1,46 @@
+name: Refresh filter lists
+
+# Recompiles the six GPL-3.0 community lists into the four Safari content-blocker
+# sets + manifest.json daily, and commits any change. Runs on a PUBLIC repo, where
+# GitHub Actions minutes (incl. macOS runners) are free and unlimited — the app repo
+# stays private. The daily job is a no-op (skip-if-unchanged) on days upstream didn't
+# change, so it commits only real updates and the app downloads only real changes.
+
+on:
+  schedule:
+    - cron: "30 2 * * *"   # 02:30 UTC daily
+  workflow_dispatch: {}     # manual "Run workflow" button
+
+permissions:
+  contents: write           # to commit the regenerated lists back to main
+
+concurrency:
+  group: refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    # macOS runner: SafariConverterLib builds reliably on macOS. It's still $0 on a
+    # public repo. (If a future SafariConverterLib builds clean on Linux, switch to
+    # ubuntu-latest for speed — try it, keep macos-14 as the guaranteed fallback.)
+    runs-on: macos-14
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Select Xcode
+        run: sudo xcode-select -s /Applications/Xcode.app
+
+      - name: Refresh + repack lists
+        run: bash refresh.sh
+
+      - name: Commit if changed
+        run: |
+          if [[ -n "$(git status --porcelain)" ]]; then
+            git config user.name "centinal-lists bot"
+            git config user.email "noreply@github.com"
+            git add -A
+            git commit -m "lists: daily refresh ($(date -u +%Y-%m-%d))"
+            git push
+          else
+            echo "No changes to publish."
+          fi

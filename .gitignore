@@ -1,0 +1,5 @@
+# Downloaded upstream lists + Swift build products are regenerated every run.
+FilterLists/
+.build/
+*.xcodeproj
+.DS_Store

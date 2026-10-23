@@ -36,6 +36,16 @@ jobs:
       - name: Refresh + repack lists
         run: bash refresh.sh
 
+      # Ed25519-sign the exact manifest bytes. The app refuses any manifest whose
+      # detached signature doesn't verify against the public key it ships with.
+      # Runs every time (signing is deterministic, so an unchanged manifest
+      # produces an unchanged .sig) and nothing may touch manifest.json after it.
+      - name: Sign manifest
+        env:
+          MANIFEST_SIGNING_KEY: ${{ secrets.MANIFEST_SIGNING_KEY }}
+          EXPECTED_PUBLIC_KEY: FUuli/96lW5BN5EryrDVXwmcrs0+50hCj5sZHROlb4g=
+        run: swift sign_manifest.swift manifest.json
+
       - name: Commit if changed
         run: |
           if [[ -n "$(git status --porcelain)" ]]; then

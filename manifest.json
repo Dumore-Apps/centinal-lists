@@ -1,39 +1,39 @@
 {
   "schemaVersion": 2,
-  "version": 8,
-  "updatedEpoch": 1793088688,
+  "version": 9,
+  "updatedEpoch": 1793177348,
   "lists": [
     {
       "id": "block-set-1",
       "name": "Block Set 1 (Ads \u2014 EasyList lead)",
       "url": "https://dumore-apps.github.io/centinal-lists/blockerSet1.json",
-      "ruleCount": 5921,
-      "bytes": 1499993,
-      "sha256": "78cda5cc46c0484684d049139dfb759ac4f48013cf51f675338cd1f0a78e60d5"
+      "ruleCount": 5920,
+      "bytes": 1499998,
+      "sha256": "9475da0b6728d023de5b7186c048d909dd2298bbac119f2ae4aab058d4f2cab8"
     },
     {
       "id": "block-set-2",
       "name": "Block Set 2 (Trackers \u2014 EasyPrivacy lead)",
       "url": "https://dumore-apps.github.io/centinal-lists/blockerSet2.json",
-      "ruleCount": 12010,
-      "bytes": 1499982,
-      "sha256": "b91ccd76de5fd73fd06065d02f8d9c76175eea18fa9b1360c7f12d8f1590aefc"
+      "ruleCount": 12009,
+      "bytes": 1499948,
+      "sha256": "cc90c6d215555c7e315a1c30793ab42b2d53ad7e2fa00e95e007c1d20b89d740"
     },
     {
       "id": "block-set-3",
       "name": "Block Set 3 (Annoyances \u2014 Fanboy lead)",
       "url": "https://dumore-apps.github.io/centinal-lists/blockerSet3.json",
       "ruleCount": 8283,
-      "bytes": 1499991,
-      "sha256": "4d649abea2e001f01f7311acb5b225c0c6bb0b3d2da76f9f1a57cdac603b6df2"
+      "bytes": 1499948,
+      "sha256": "74a669282f9439d96730ba3b32bea1cada5e5c8f462934aad987b74766c22006"
     },
     {
       "id": "block-set-4",
       "name": "Block Set 4 (AdGuard + regional lead)",
       "url": "https://dumore-apps.github.io/centinal-lists/blockerSet4.json",
-      "ruleCount": 7063,
-      "bytes": 1499967,
-      "sha256": "bd46800c75f4a6c491cc95d6e50b7f6ce1a73555101c9c34196bad43e34efee6"
+      "ruleCount": 7061,
+      "bytes": 1500000,
+      "sha256": "563824b723fa6f14ed239b2fd255e25d33e840c659f19c3f01a9c0897f02b072"
     }
   ],
   "sources": [
@@ -82,7 +82,7 @@
       "name": "AdGuard Base",
       "category": "ads",
       "license": "GPL-3.0",
-      "ruleCount": 1548,
+      "ruleCount": 1547,
       "url": "https://filters.adtidy.org/extension/safari/filters/2.txt"
     }
   ]

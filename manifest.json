@@ -1,39 +1,39 @@
 {
   "schemaVersion": 2,
-  "version": 25,
-  "updatedEpoch": 1794647607,
+  "version": 26,
+  "updatedEpoch": 1794735786,
   "lists": [
     {
       "id": "block-set-1",
       "name": "Block Set 1 (Ads \u2014 EasyList lead)",
       "url": "https://dumore-apps.github.io/centinal-lists/blockerSet1.json",
-      "ruleCount": 5901,
-      "bytes": 1499988,
-      "sha256": "355d11486a48cc6962a0f69c5bfcbd710ff6ce89e0bd90293cf199be8a702c8b"
+      "ruleCount": 5912,
+      "bytes": 1499984,
+      "sha256": "e0929aa904b7dfb96143b0f103c71965d1bee9766bdd4256917c59746a8d64ec"
     },
     {
       "id": "block-set-2",
       "name": "Block Set 2 (Trackers \u2014 EasyPrivacy lead)",
       "url": "https://dumore-apps.github.io/centinal-lists/blockerSet2.json",
-      "ruleCount": 12028,
-      "bytes": 1499983,
-      "sha256": "2831e0428757d75b16c99d4a8ca3ad33154acdb786733beb5bd2e59aa4a18c19"
+      "ruleCount": 12017,
+      "bytes": 1499987,
+      "sha256": "82ceac672364783833227ab5b73b1bd1ca4aa10437c7fcbce4e36b4185bbed0f"
     },
     {
       "id": "block-set-3",
       "name": "Block Set 3 (Annoyances \u2014 Fanboy lead)",
       "url": "https://dumore-apps.github.io/centinal-lists/blockerSet3.json",
-      "ruleCount": 8265,
-      "bytes": 1499985,
-      "sha256": "f3b22b433c137d5eb10a88bde7208dd2c08cc4f9eeb5d56c55129bf7d48106b7"
+      "ruleCount": 8266,
+      "bytes": 1499978,
+      "sha256": "352ebcb671e982166e9f7de8dc815f8c1425f4c7e17cfe67c525484ab04f1f98"
     },
     {
       "id": "block-set-4",
       "name": "Block Set 4 (AdGuard + regional lead)",
       "url": "https://dumore-apps.github.io/centinal-lists/blockerSet4.json",
-      "ruleCount": 7039,
-      "bytes": 1499951,
-      "sha256": "46f3b196e482218779454cdbed7bc3de621450d049f8ce3cdb5da40a1458fe48"
+      "ruleCount": 7040,
+      "bytes": 1499975,
+      "sha256": "1742033f951aa801d10eae40e5a85fa5f1b0d0a6bf03ccf57d5e92a85f9afbda"
     }
   ],
   "sources": [
@@ -66,7 +66,7 @@
       "name": "IndianList",
       "category": "regional",
       "license": "GPL-3.0",
-      "ruleCount": 2693,
+      "ruleCount": 2695,
       "url": "https://easylist-downloads.adblockplus.org/indianlist.txt"
     },
     {

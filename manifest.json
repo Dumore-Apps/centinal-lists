@@ -1,39 +1,39 @@
 {
   "schemaVersion": 2,
-  "version": 37,
-  "updatedEpoch": 1795777707,
+  "version": 38,
+  "updatedEpoch": 1795862579,
   "lists": [
     {
       "id": "block-set-1",
       "name": "Block Set 1 (Ads \u2014 EasyList lead)",
       "url": "https://dumore-apps.github.io/centinal-lists/blockerSet1.json",
-      "ruleCount": 5913,
-      "bytes": 1499955,
-      "sha256": "4e40d249e2bbe05730f181b895c99472b268bf1de9dd963e29eb3a66ddb6cc9a"
+      "ruleCount": 5895,
+      "bytes": 1499993,
+      "sha256": "a6cb4ca90c286c237e3174683527dfc2ebf0c260f5681798f52e81519c898fd3"
     },
     {
       "id": "block-set-2",
       "name": "Block Set 2 (Trackers \u2014 EasyPrivacy lead)",
       "url": "https://dumore-apps.github.io/centinal-lists/blockerSet2.json",
-      "ruleCount": 12035,
-      "bytes": 1499955,
-      "sha256": "5bea10bea1c4f3a82ef570be7d93e17122355d77839dcfba1258f5b2a3c984eb"
+      "ruleCount": 12053,
+      "bytes": 1499973,
+      "sha256": "53f5d95a65f5e33e45ec75514efd6ede5c11f740830a8f69338ba48a164de947"
     },
     {
       "id": "block-set-3",
       "name": "Block Set 3 (Annoyances \u2014 Fanboy lead)",
       "url": "https://dumore-apps.github.io/centinal-lists/blockerSet3.json",
-      "ruleCount": 8244,
+      "ruleCount": 8246,
       "bytes": 1500000,
-      "sha256": "c0871c113df2b9d962e51f514ad574917688737cf150461af4a1989925402833"
+      "sha256": "59adb8628087c7e47b5dd5f77533716b6c70f64f95ee973778d3648a4a22fa7f"
     },
     {
       "id": "block-set-4",
       "name": "Block Set 4 (AdGuard + regional lead)",
       "url": "https://dumore-apps.github.io/centinal-lists/blockerSet4.json",
-      "ruleCount": 7113,
-      "bytes": 1499989,
-      "sha256": "8c78d39096641696a3315909612fd9ea6dad5bc2e38222c7a1a8fe179e9c2ef6"
+      "ruleCount": 7112,
+      "bytes": 1499954,
+      "sha256": "489e8196a7ce59eac7b0617fe3e43d7dd078af0086bc68782ee192f0e9e7e837"
     }
   ],
   "sources": [
@@ -42,7 +42,7 @@
       "name": "EasyList",
       "category": "ads",
       "license": "GPL-3.0",
-      "ruleCount": 7055,
+      "ruleCount": 7054,
       "url": "https://easylist.to/easylist/easylist.txt"
     },
     {
@@ -50,7 +50,7 @@
       "name": "EasyPrivacy",
       "category": "privacy",
       "license": "GPL-3.0",
-      "ruleCount": 12179,
+      "ruleCount": 12181,
       "url": "https://easylist.to/easylist/easyprivacy.txt"
     },
     {
@@ -58,7 +58,7 @@
       "name": "Fanboy's Annoyances",
       "category": "annoyances",
       "license": "GPL-3.0",
-      "ruleCount": 2139,
+      "ruleCount": 2140,
       "url": "https://secure.fanboy.co.nz/fanboy-annoyance.txt"
     },
     {
@@ -66,7 +66,7 @@
       "name": "IndianList",
       "category": "regional",
       "license": "GPL-3.0",
-      "ruleCount": 2754,
+      "ruleCount": 2753,
       "url": "https://easylist-downloads.adblockplus.org/indianlist.txt"
     },
     {
